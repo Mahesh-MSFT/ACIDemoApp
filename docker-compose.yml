@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  acidemoapp:
+    image: acidemoapp
+    build:
+      context: .
+      dockerfile: ACIDemoApp/Dockerfile
