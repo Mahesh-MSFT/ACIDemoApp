@@ -3,12 +3,13 @@ WORKDIR /app
 EXPOSE 80
 
 FROM microsoft/aspnetcore-build:2.0 AS build
-WORKDIR /src
-COPY ACIDemoApp.sln ./
-COPY ACIDemoApp/ACIDemoApp.csproj ACIDemoApp/
+#WORKDIR ../
+#RUN dir
+COPY ACIDemoApp.sln .
+COPY ACIDemoApp/ACIDemoApp.csproj ACIDemoApp
 RUN dotnet restore -nowarn:msb3202,nu1503
 COPY . .
-WORKDIR /src/ACIDemoApp
+WORKDIR /ACIDemoApp
 RUN dotnet build -c Release -o /app
 
 FROM build AS publish

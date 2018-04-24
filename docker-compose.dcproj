@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.0</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>d7ee6c65-77c3-4688-b0d6-8fc465edb56d</ProjectGuid>
+    <ProjectGuid>eb432817-5031-41c0-9d2d-db0f3524b18f</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>http://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>acidemoapp</DockerServiceName>
